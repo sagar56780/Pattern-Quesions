@@ -1,0 +1,27 @@
+class Pattern{
+    public static void main(String[] args) {
+        int n=5;
+         int k=n;
+        for(int i=1;i<=n;i++)
+        {  int t=i;
+            for(int j=0;j<i;j++)
+            {
+                if(j>0)
+                {
+                    System.out.print(t+k-j+" ");
+                    t=t+k-j;
+                }
+                else{
+                    System.out.print(i+" ");
+                }  
+            }
+            System.out.println();
+        }
+    }
+}
+/*1
+  2 6
+  3 7 10
+  4 8 11 13
+  5 9 12 14 15
+  */
